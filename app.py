@@ -1,6 +1,9 @@
 import streamlit as st
 import pandas as pd
 import joblib
+import sys
+import sklearn._loss._loss
+sys.modules['_loss'] = sklearn._loss._loss
 
 # 1. Configuração da Página
 st.set_page_config(page_title="Fila Inteligente | Central de Suporte", page_icon="🧠", layout="wide", initial_sidebar_state="expanded")
